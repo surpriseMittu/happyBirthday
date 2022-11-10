@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--<title>Typing Text Animation</title>-->
+</head>
+
+<body>
+   <div class="home">
+        <div class="container" style="width:100%;text-align:center;">
+            <span class="text first-text" style="font-family: 'Merienda', cursive;
+            ">Welcome to the the best day of my most</span> <br><br>
+            <span class="text sec-text">Freelancer</span><br><br>
+            <span class="text first-text" style="font-family: 'Merienda', cursive;
+            ">idiot</span> <br><br>
+            <a  href="./background.html"><button type="button" class="btn btn-outline-secondary">Wanna know why? xp</button></a>
+    
+    
+        </div>
+    
+        <script>
+            const text = document.querySelector(".sec-text");
+    
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "craziest";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "gorgeous";
+                }, 4000);
+                setTimeout(() => {
+                    text.textContent = "scrumptious";
+                }, 8000);
+    
+               
+            }
+    
+            textLoad();
+            setInterval(textLoad, 12000);
+        </script>
+   </div>
+</body>
+
+</html>
